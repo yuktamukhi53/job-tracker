@@ -7,8 +7,8 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://job-tracker-blond-pi.vercel.app',
-  credentials: true
+  origin: '*',
+  credentials: false
 }));
 app.use(express.json());
 
